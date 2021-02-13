@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FoodDiaryItemCell" id="gTV-IL-0wX" customClass="FoodDiaryItemCell" customModule="Health_Coach" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="121" height="194"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="121" height="194"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ipi-7W-6zU" customClass="CardView" customModule="Health_Coach" customModuleProvider="target">
+                        <rect key="frame" x="3" y="3" width="115" height="188"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="choose_gallery.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="RmE-2z-hwz">
+                                <rect key="frame" x="0.0" y="0.0" width="115" height="188"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SRN-S6-07V">
+                                <rect key="frame" x="0.0" y="154" width="115" height="34"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="xTo-Rq-fkr">
+                                    <rect key="frame" x="0.0" y="0.0" width="115" height="34"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQK-lH-oeL">
+                                            <rect key="frame" x="2" y="2" width="111" height="18.5"/>
+                                            <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="15"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="WQK-lH-oeL" firstAttribute="leading" secondItem="xTo-Rq-fkr" secondAttribute="leading" constant="2" id="qkg-La-PvV"/>
+                                        <constraint firstAttribute="trailing" secondItem="WQK-lH-oeL" secondAttribute="trailing" constant="2" id="sjc-0q-9vF"/>
+                                        <constraint firstItem="WQK-lH-oeL" firstAttribute="top" secondItem="xTo-Rq-fkr" secondAttribute="top" constant="2" id="w3q-w0-te7"/>
+                                    </constraints>
+                                </view>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="nnz-my-soa"/>
+                                </constraints>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0JZ-hP-0al">
+                                <rect key="frame" x="5" y="9" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="bNo-Hv-51E"/>
+                                    <constraint firstAttribute="width" constant="20" id="qvD-WE-9NN"/>
+                                </constraints>
+                                <state key="normal" image="Remove"/>
+                                <connections>
+                                    <action selector="btnFoodItem:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Qi3-j3-rs6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0JZ-hP-0al" firstAttribute="leading" secondItem="Ipi-7W-6zU" secondAttribute="leading" constant="5" id="3tU-uY-Bz5"/>
+                            <constraint firstAttribute="bottom" secondItem="SRN-S6-07V" secondAttribute="bottom" id="Bbl-os-uI3"/>
+                            <constraint firstAttribute="trailing" secondItem="RmE-2z-hwz" secondAttribute="trailing" id="Lhf-LP-s8Y"/>
+                            <constraint firstItem="0JZ-hP-0al" firstAttribute="top" secondItem="Ipi-7W-6zU" secondAttribute="top" constant="9" id="U4X-TH-beI"/>
+                            <constraint firstItem="SRN-S6-07V" firstAttribute="leading" secondItem="Ipi-7W-6zU" secondAttribute="leading" id="Z4v-DM-20l"/>
+                            <constraint firstAttribute="trailing" secondItem="SRN-S6-07V" secondAttribute="trailing" id="gMC-90-WHS"/>
+                            <constraint firstItem="RmE-2z-hwz" firstAttribute="top" secondItem="Ipi-7W-6zU" secondAttribute="top" id="l7o-km-QA2"/>
+                            <constraint firstItem="RmE-2z-hwz" firstAttribute="leading" secondItem="Ipi-7W-6zU" secondAttribute="leading" id="ur8-9e-8hu"/>
+                            <constraint firstAttribute="bottom" secondItem="RmE-2z-hwz" secondAttribute="bottom" id="vMU-TU-d42"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Ipi-7W-6zU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="3" id="8Lb-Oc-qWV"/>
+                <constraint firstAttribute="bottom" secondItem="Ipi-7W-6zU" secondAttribute="bottom" constant="3" id="8gs-na-NfD"/>
+                <constraint firstItem="Ipi-7W-6zU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="3" id="sar-wC-VDe"/>
+                <constraint firstAttribute="trailing" secondItem="Ipi-7W-6zU" secondAttribute="trailing" constant="3" id="xdy-o4-2Mq"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="121" height="194"/>
+            <connections>
+                <outlet property="imgOfItem" destination="RmE-2z-hwz" id="9Zb-FB-2rw"/>
+                <outlet property="lblItemName" destination="WQK-lH-oeL" id="aQR-sI-9HD"/>
+            </connections>
+            <point key="canvasLocation" x="106.5217391304348" y="70.3125"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Remove" width="42" height="42"/>
+        <image name="choose_gallery.jpg" width="512" height="512"/>
+    </resources>
+</document>

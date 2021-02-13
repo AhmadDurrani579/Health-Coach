@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HydrationSelectCell" id="gTV-IL-0wX" customClass="HydrationSelectCell" customModule="Health_Coach" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="121"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="121"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D9S-r4-nXh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="121"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9c1-E9-N0b" customClass="CardView" customModule="Health_Coach" customModuleProvider="target">
+                                <rect key="frame" x="16" y="52" width="288" height="63"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty" translatesAutoresizingMaskIntoConstraints="NO" id="FBg-64-TDP">
+                                        <rect key="frame" x="0.0" y="15" width="48" height="33"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLN-G2-iNS">
+                                        <rect key="frame" x="0.0" y="15" width="48" height="33"/>
+                                        <connections>
+                                            <action selector="btnBottleSelect_Pressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="nyv-SG-7lc"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty" translatesAutoresizingMaskIntoConstraints="NO" id="ier-V1-Ang">
+                                        <rect key="frame" x="48" y="15" width="48" height="33"/>
+                                    </imageView>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tMk-01-CCQ">
+                                        <rect key="frame" x="48" y="15" width="48" height="33"/>
+                                        <connections>
+                                            <action selector="btnBottleSelect_Pressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="UJD-Vv-hNx"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty" translatesAutoresizingMaskIntoConstraints="NO" id="spz-p3-dxv">
+                                        <rect key="frame" x="96" y="15" width="48" height="33"/>
+                                    </imageView>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="olA-xw-JZS">
+                                        <rect key="frame" x="96" y="15" width="48" height="33"/>
+                                        <connections>
+                                            <action selector="btnBottleSelect_Pressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="aHC-rw-kD8"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty" translatesAutoresizingMaskIntoConstraints="NO" id="A99-vY-8F9">
+                                        <rect key="frame" x="144" y="15" width="48" height="33"/>
+                                    </imageView>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtt-bh-AFF">
+                                        <rect key="frame" x="144" y="15" width="48" height="33"/>
+                                        <connections>
+                                            <action selector="btnBottleSelect_Pressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="mN0-j4-Jpk"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty" translatesAutoresizingMaskIntoConstraints="NO" id="dZ5-UX-v3P">
+                                        <rect key="frame" x="192" y="15" width="48" height="33"/>
+                                    </imageView>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TDX-Ql-h8k">
+                                        <rect key="frame" x="192" y="15" width="48" height="33"/>
+                                        <connections>
+                                            <action selector="btnBottleSelect_Pressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="nxz-bT-VV7"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty" translatesAutoresizingMaskIntoConstraints="NO" id="uCq-Iy-1O8">
+                                        <rect key="frame" x="240" y="15" width="48" height="33"/>
+                                    </imageView>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QgN-9B-mr5">
+                                        <rect key="frame" x="240" y="15" width="48" height="33"/>
+                                        <connections>
+                                            <action selector="btnBottleSelect_Pressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="j9N-JO-zz6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="2AX-3C-dMu"/>
+                                    <constraint firstItem="uCq-Iy-1O8" firstAttribute="centerY" secondItem="dZ5-UX-v3P" secondAttribute="centerY" id="2YU-c4-7DH"/>
+                                    <constraint firstItem="ier-V1-Ang" firstAttribute="height" secondItem="FBg-64-TDP" secondAttribute="height" id="5yt-Hy-WZN"/>
+                                    <constraint firstItem="tMk-01-CCQ" firstAttribute="leading" secondItem="ier-V1-Ang" secondAttribute="leading" id="6Pa-Ii-xIQ"/>
+                                    <constraint firstItem="olA-xw-JZS" firstAttribute="leading" secondItem="spz-p3-dxv" secondAttribute="leading" id="89s-Vj-6QR"/>
+                                    <constraint firstItem="A99-vY-8F9" firstAttribute="width" secondItem="spz-p3-dxv" secondAttribute="width" id="8Hc-ct-JLt"/>
+                                    <constraint firstItem="FBg-64-TDP" firstAttribute="top" secondItem="9c1-E9-N0b" secondAttribute="top" constant="15" id="BMu-38-gmT"/>
+                                    <constraint firstAttribute="bottom" secondItem="FBg-64-TDP" secondAttribute="bottom" constant="15" id="BeJ-Mb-pgK"/>
+                                    <constraint firstItem="QgN-9B-mr5" firstAttribute="top" secondItem="uCq-Iy-1O8" secondAttribute="top" id="CDb-zI-0wF"/>
+                                    <constraint firstItem="TDX-Ql-h8k" firstAttribute="leading" secondItem="dZ5-UX-v3P" secondAttribute="leading" id="CTy-kO-jAV"/>
+                                    <constraint firstItem="olA-xw-JZS" firstAttribute="trailing" secondItem="spz-p3-dxv" secondAttribute="trailing" id="ClU-1A-voJ"/>
+                                    <constraint firstItem="tMk-01-CCQ" firstAttribute="trailing" secondItem="ier-V1-Ang" secondAttribute="trailing" id="D0H-rI-4DG"/>
+                                    <constraint firstItem="FBg-64-TDP" firstAttribute="width" secondItem="9c1-E9-N0b" secondAttribute="width" multiplier="0.166667" id="DmY-si-ujc"/>
+                                    <constraint firstItem="dZ5-UX-v3P" firstAttribute="width" secondItem="A99-vY-8F9" secondAttribute="width" id="Glr-uO-S6W"/>
+                                    <constraint firstItem="uCq-Iy-1O8" firstAttribute="leading" secondItem="dZ5-UX-v3P" secondAttribute="trailing" id="IW7-qN-eMT"/>
+                                    <constraint firstItem="A99-vY-8F9" firstAttribute="leading" secondItem="spz-p3-dxv" secondAttribute="trailing" id="JZg-zB-GLl"/>
+                                    <constraint firstItem="ier-V1-Ang" firstAttribute="width" secondItem="FBg-64-TDP" secondAttribute="width" id="MrQ-nT-KIE"/>
+                                    <constraint firstItem="dZ5-UX-v3P" firstAttribute="leading" secondItem="A99-vY-8F9" secondAttribute="trailing" id="Njb-bJ-4IS"/>
+                                    <constraint firstItem="TDX-Ql-h8k" firstAttribute="top" secondItem="dZ5-UX-v3P" secondAttribute="top" id="Otg-eU-krL"/>
+                                    <constraint firstItem="XLN-G2-iNS" firstAttribute="trailing" secondItem="FBg-64-TDP" secondAttribute="trailing" id="PoG-z8-Cy7"/>
+                                    <constraint firstItem="XLN-G2-iNS" firstAttribute="leading" secondItem="FBg-64-TDP" secondAttribute="leading" id="TAT-sl-1CT"/>
+                                    <constraint firstItem="spz-p3-dxv" firstAttribute="leading" secondItem="ier-V1-Ang" secondAttribute="trailing" id="Tyf-eX-zQs"/>
+                                    <constraint firstItem="tMk-01-CCQ" firstAttribute="top" secondItem="ier-V1-Ang" secondAttribute="top" id="WAt-JW-ino"/>
+                                    <constraint firstItem="gtt-bh-AFF" firstAttribute="top" secondItem="A99-vY-8F9" secondAttribute="top" id="YJU-m4-4LM"/>
+                                    <constraint firstItem="A99-vY-8F9" firstAttribute="centerY" secondItem="spz-p3-dxv" secondAttribute="centerY" id="aPz-ue-awz"/>
+                                    <constraint firstItem="uCq-Iy-1O8" firstAttribute="height" secondItem="dZ5-UX-v3P" secondAttribute="height" id="azw-ev-mhF"/>
+                                    <constraint firstItem="TDX-Ql-h8k" firstAttribute="bottom" secondItem="dZ5-UX-v3P" secondAttribute="bottom" id="b0m-hI-6er"/>
+                                    <constraint firstItem="TDX-Ql-h8k" firstAttribute="trailing" secondItem="dZ5-UX-v3P" secondAttribute="trailing" id="eB0-EG-EDN"/>
+                                    <constraint firstItem="ier-V1-Ang" firstAttribute="centerY" secondItem="FBg-64-TDP" secondAttribute="centerY" id="eRR-GN-DgU"/>
+                                    <constraint firstItem="dZ5-UX-v3P" firstAttribute="height" secondItem="A99-vY-8F9" secondAttribute="height" id="evB-bV-3Zh"/>
+                                    <constraint firstItem="olA-xw-JZS" firstAttribute="top" secondItem="spz-p3-dxv" secondAttribute="top" id="fOe-Em-zv2"/>
+                                    <constraint firstItem="A99-vY-8F9" firstAttribute="height" secondItem="spz-p3-dxv" secondAttribute="height" id="fmI-X1-fZM"/>
+                                    <constraint firstItem="XLN-G2-iNS" firstAttribute="top" secondItem="FBg-64-TDP" secondAttribute="top" id="g3Y-4h-oLI"/>
+                                    <constraint firstItem="QgN-9B-mr5" firstAttribute="leading" secondItem="uCq-Iy-1O8" secondAttribute="leading" id="gjR-U1-jkY"/>
+                                    <constraint firstItem="gtt-bh-AFF" firstAttribute="trailing" secondItem="A99-vY-8F9" secondAttribute="trailing" id="hEv-Qu-Omb"/>
+                                    <constraint firstItem="uCq-Iy-1O8" firstAttribute="width" secondItem="dZ5-UX-v3P" secondAttribute="width" id="hak-zR-INZ"/>
+                                    <constraint firstItem="ier-V1-Ang" firstAttribute="leading" secondItem="FBg-64-TDP" secondAttribute="trailing" id="kC6-wS-NVL"/>
+                                    <constraint firstItem="spz-p3-dxv" firstAttribute="centerY" secondItem="ier-V1-Ang" secondAttribute="centerY" id="kQc-ko-qOM"/>
+                                    <constraint firstItem="XLN-G2-iNS" firstAttribute="bottom" secondItem="FBg-64-TDP" secondAttribute="bottom" id="mqm-ta-az5"/>
+                                    <constraint firstItem="gtt-bh-AFF" firstAttribute="leading" secondItem="A99-vY-8F9" secondAttribute="leading" id="niO-uo-us8"/>
+                                    <constraint firstItem="gtt-bh-AFF" firstAttribute="bottom" secondItem="A99-vY-8F9" secondAttribute="bottom" id="pJk-eZ-yAQ"/>
+                                    <constraint firstItem="spz-p3-dxv" firstAttribute="width" secondItem="ier-V1-Ang" secondAttribute="width" id="pLw-Ld-iAh"/>
+                                    <constraint firstItem="tMk-01-CCQ" firstAttribute="bottom" secondItem="ier-V1-Ang" secondAttribute="bottom" id="qd2-zL-8Eb"/>
+                                    <constraint firstItem="olA-xw-JZS" firstAttribute="bottom" secondItem="spz-p3-dxv" secondAttribute="bottom" id="saf-EH-HU3"/>
+                                    <constraint firstItem="spz-p3-dxv" firstAttribute="height" secondItem="ier-V1-Ang" secondAttribute="height" id="uEY-ch-Tf2"/>
+                                    <constraint firstItem="QgN-9B-mr5" firstAttribute="bottom" secondItem="uCq-Iy-1O8" secondAttribute="bottom" id="uyv-JZ-ugT"/>
+                                    <constraint firstItem="FBg-64-TDP" firstAttribute="leading" secondItem="9c1-E9-N0b" secondAttribute="leading" id="v85-wd-q4t"/>
+                                    <constraint firstItem="QgN-9B-mr5" firstAttribute="trailing" secondItem="uCq-Iy-1O8" secondAttribute="trailing" id="xjf-1g-slk"/>
+                                    <constraint firstItem="dZ5-UX-v3P" firstAttribute="centerY" secondItem="A99-vY-8F9" secondAttribute="centerY" id="y67-oj-Tv6"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hydration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oKa-jP-hUV">
+                                <rect key="frame" x="119.5" y="18" width="81" height="20"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="9c1-E9-N0b" secondAttribute="trailing" constant="16" id="TGn-nH-V5d"/>
+                            <constraint firstAttribute="bottom" secondItem="9c1-E9-N0b" secondAttribute="bottom" constant="6" id="cFU-1u-FOU"/>
+                            <constraint firstItem="oKa-jP-hUV" firstAttribute="centerX" secondItem="D9S-r4-nXh" secondAttribute="centerX" id="eed-OI-qzG"/>
+                            <constraint firstItem="9c1-E9-N0b" firstAttribute="top" secondItem="oKa-jP-hUV" secondAttribute="bottom" constant="14" id="gUB-qe-Y5P"/>
+                            <constraint firstItem="9c1-E9-N0b" firstAttribute="leading" secondItem="D9S-r4-nXh" secondAttribute="leading" constant="16" id="k3B-Zi-lH4"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="D9S-r4-nXh" secondAttribute="bottom" id="F0u-17-Aai"/>
+                <constraint firstAttribute="trailing" secondItem="D9S-r4-nXh" secondAttribute="trailing" id="Na5-gn-wvr"/>
+                <constraint firstItem="D9S-r4-nXh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="X1V-Do-yst"/>
+                <constraint firstItem="D9S-r4-nXh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="op7-lH-7du"/>
+            </constraints>
+            <size key="customSize" width="248" height="111"/>
+            <connections>
+                <outlet property="bottle1" destination="FBg-64-TDP" id="vHp-BD-8Fb"/>
+                <outlet property="bottle2" destination="ier-V1-Ang" id="XJO-lc-9Nv"/>
+                <outlet property="bottle3" destination="spz-p3-dxv" id="tjG-3A-hLj"/>
+                <outlet property="bottle4" destination="A99-vY-8F9" id="Ivt-xv-BQn"/>
+                <outlet property="bottle5" destination="dZ5-UX-v3P" id="PZb-sr-aDk"/>
+                <outlet property="bottle6" destination="uCq-Iy-1O8" id="FZw-9D-X0s"/>
+            </connections>
+            <point key="canvasLocation" x="175.36231884057972" y="57.254464285714285"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="empty" width="170.66667175292969" height="170.66667175292969"/>
+    </resources>
+</document>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProfileInfoCell" id="gTV-IL-0wX" customClass="ProfileInfoCell" customModule="Health_Coach" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="149" height="176"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="149" height="176"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xUn-8T-p1W" customClass="CardView" customModule="Health_Coach" customModuleProvider="target">
+                        <rect key="frame" x="10" y="5" width="129" height="166"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="choose_gallery.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="P82-0Y-eVr">
+                                <rect key="frame" x="0.0" y="0.0" width="129" height="166"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XV6-Ck-qV0">
+                                <rect key="frame" x="0.0" y="131" width="129" height="35"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8NN-Oh-njW">
+                                        <rect key="frame" x="2" y="15" width="125" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="8NN-Oh-njW" firstAttribute="leading" secondItem="XV6-Ck-qV0" secondAttribute="leading" constant="2" id="0QV-SG-qTu"/>
+                                    <constraint firstAttribute="height" constant="35" id="YcS-J7-WJO"/>
+                                    <constraint firstAttribute="trailing" secondItem="8NN-Oh-njW" secondAttribute="trailing" constant="2" id="qg3-NS-LgI"/>
+                                    <constraint firstAttribute="bottom" secondItem="8NN-Oh-njW" secondAttribute="bottom" constant="2" id="wBu-KS-E5L"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="P82-0Y-eVr" secondAttribute="trailing" id="6Pl-zg-X5c"/>
+                            <constraint firstAttribute="bottom" secondItem="P82-0Y-eVr" secondAttribute="bottom" id="Bgh-B9-ULr"/>
+                            <constraint firstItem="XV6-Ck-qV0" firstAttribute="leading" secondItem="xUn-8T-p1W" secondAttribute="leading" id="QhD-iA-tlS"/>
+                            <constraint firstItem="P82-0Y-eVr" firstAttribute="top" secondItem="xUn-8T-p1W" secondAttribute="top" id="VUa-Tq-Oqm"/>
+                            <constraint firstItem="P82-0Y-eVr" firstAttribute="leading" secondItem="xUn-8T-p1W" secondAttribute="leading" id="aEv-ir-Z2K"/>
+                            <constraint firstAttribute="trailing" secondItem="XV6-Ck-qV0" secondAttribute="trailing" id="uhi-5H-nPP"/>
+                            <constraint firstAttribute="bottom" secondItem="XV6-Ck-qV0" secondAttribute="bottom" id="wHE-di-FHg"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.40000000000000002"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="xUn-8T-p1W" secondAttribute="trailing" constant="10" id="dPH-YQ-FJF"/>
+                <constraint firstItem="xUn-8T-p1W" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="eOl-mM-eWI"/>
+                <constraint firstAttribute="bottom" secondItem="xUn-8T-p1W" secondAttribute="bottom" constant="5" id="jbi-nQ-6iA"/>
+                <constraint firstItem="xUn-8T-p1W" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="kvW-70-dU1"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="149" height="176"/>
+            <connections>
+                <outlet property="imgOfProfile" destination="P82-0Y-eVr" id="tXn-6x-dty"/>
+                <outlet property="lblNameOfExercise" destination="8NN-Oh-njW" id="pO7-tN-Kwn"/>
+                <outlet property="viewOfProfile" destination="xUn-8T-p1W" id="9j3-3n-hjR"/>
+            </connections>
+            <point key="canvasLocation" x="18.115942028985508" y="39.508928571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="choose_gallery.jpg" width="512" height="512"/>
+    </resources>
+</document>

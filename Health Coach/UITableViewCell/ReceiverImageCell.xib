@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ReceiverImageCell" rowHeight="200" id="KGk-i7-Jjw" customClass="ReceiverImageCell" customModule="Health_Coach" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="User" translatesAutoresizingMaskIntoConstraints="NO" id="xof-Ko-qgi">
+                        <rect key="frame" x="16" y="144" width="38" height="38"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="38" id="MrL-2e-Mb6"/>
+                            <constraint firstAttribute="width" constant="38" id="erq-ds-O53"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0kb-LF-Qbq" customClass="CardView" customModule="Health_Coach" customModuleProvider="target">
+                        <rect key="frame" x="67" y="6" width="200" height="176"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6:30 pm" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYR-1W-Zlr">
+                                <rect key="frame" x="3" y="161" width="192" height="12"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                                <color key="textColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="choose_gallery.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="yYc-EH-gjU">
+                                <rect key="frame" x="5" y="10" width="190" height="146"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="190" id="hLK-HM-QMz"/>
+                                    <constraint firstAttribute="height" constant="146" id="kzj-VZ-Xbk"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="yYc-EH-gjU" secondAttribute="trailing" constant="5" id="RcL-pS-cAH"/>
+                            <constraint firstItem="yYc-EH-gjU" firstAttribute="leading" secondItem="0kb-LF-Qbq" secondAttribute="leading" constant="5" id="So4-yp-hSs"/>
+                            <constraint firstItem="eYR-1W-Zlr" firstAttribute="leading" secondItem="0kb-LF-Qbq" secondAttribute="leading" constant="3" id="UFP-VK-QbS"/>
+                            <constraint firstAttribute="width" constant="200" id="WVF-qB-9Ig"/>
+                            <constraint firstAttribute="bottom" secondItem="eYR-1W-Zlr" secondAttribute="bottom" constant="3" id="XiR-T2-yaE"/>
+                            <constraint firstItem="eYR-1W-Zlr" firstAttribute="top" secondItem="yYc-EH-gjU" secondAttribute="bottom" constant="5" id="hgo-T6-cAt"/>
+                            <constraint firstAttribute="trailing" secondItem="eYR-1W-Zlr" secondAttribute="trailing" constant="5" id="yOh-Or-Pjk"/>
+                            <constraint firstItem="yYc-EH-gjU" firstAttribute="top" secondItem="0kb-LF-Qbq" secondAttribute="top" constant="10" id="zvk-E4-nGp"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="0kb-LF-Qbq" firstAttribute="leading" secondItem="xof-Ko-qgi" secondAttribute="trailing" constant="13" id="3qK-ZQ-Uxf"/>
+                    <constraint firstAttribute="bottom" secondItem="0kb-LF-Qbq" secondAttribute="bottom" constant="18" id="HQU-OL-DLU"/>
+                    <constraint firstItem="xof-Ko-qgi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="IjS-To-Ijs"/>
+                    <constraint firstItem="0kb-LF-Qbq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="MhM-rV-gBS"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="xof-Ko-qgi" secondAttribute="bottom" constant="7" id="yiF-j9-Rfg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgOfReceiver" destination="yYc-EH-gjU" id="ppQ-3a-Hsi"/>
+                <outlet property="imgOfUser" destination="xof-Ko-qgi" id="vaQ-kj-G6J"/>
+                <outlet property="lblTime" destination="eYR-1W-Zlr" id="h9q-aD-nIZ"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="143.97321428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="User" width="43.333332061767578" height="43.333332061767578"/>
+        <image name="choose_gallery.jpg" width="512" height="512"/>
+    </resources>
+</document>

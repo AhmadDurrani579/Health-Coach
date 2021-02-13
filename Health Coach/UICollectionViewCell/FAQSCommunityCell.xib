@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FAQSCommunityCell" id="gTV-IL-0wX" customClass="FAQSCommunityCell" customModule="Health_Coach" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="53"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="53"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rEQ-y3-xgF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="53"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oop-yA-4I4" customClass="CardView" customModule="Health_Coach" customModuleProvider="target">
+                                <rect key="frame" x="12" y="5" width="296" height="43"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9WU-CL-bNq">
+                                        <rect key="frame" x="0.0" y="0.0" width="296" height="43"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="15"/>
+                                        <state key="normal" title="LOGOUT">
+                                            <color key="titleColor" red="0.25098039220000001" green="0.83921568629999999" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="btnLogout_Pressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Bwl-BU-3Fi"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="9WU-CL-bNq" secondAttribute="bottom" id="38S-mE-gZ1"/>
+                                    <constraint firstItem="9WU-CL-bNq" firstAttribute="leading" secondItem="Oop-yA-4I4" secondAttribute="leading" id="4U8-HJ-HJF"/>
+                                    <constraint firstItem="9WU-CL-bNq" firstAttribute="top" secondItem="Oop-yA-4I4" secondAttribute="top" id="CgA-6U-1e4"/>
+                                    <constraint firstAttribute="trailing" secondItem="9WU-CL-bNq" secondAttribute="trailing" id="dcS-gK-IsT"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Oop-yA-4I4" secondAttribute="bottom" constant="5" id="36L-gZ-E75"/>
+                            <constraint firstAttribute="trailing" secondItem="Oop-yA-4I4" secondAttribute="trailing" constant="12" id="4kZ-F9-UoH"/>
+                            <constraint firstItem="Oop-yA-4I4" firstAttribute="top" secondItem="rEQ-y3-xgF" secondAttribute="top" constant="5" id="8Sa-cY-QCn"/>
+                            <constraint firstItem="Oop-yA-4I4" firstAttribute="leading" secondItem="rEQ-y3-xgF" secondAttribute="leading" constant="12" id="t29-48-9LZ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="rEQ-y3-xgF" secondAttribute="trailing" id="FhV-ae-oBc"/>
+                <constraint firstItem="rEQ-y3-xgF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="dic-eo-evZ"/>
+                <constraint firstItem="rEQ-y3-xgF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="dnt-R4-Ifp"/>
+                <constraint firstAttribute="bottom" secondItem="rEQ-y3-xgF" secondAttribute="bottom" id="qXn-z5-SWi"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="292" height="53"/>
+            <point key="canvasLocation" x="137.68115942028987" y="77.34375"/>
+        </collectionViewCell>
+    </objects>
+</document>

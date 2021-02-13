@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FooterSectionCell" id="U6b-Vx-4bR" customClass="FooterSectionCell" customModule="Health_Coach" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vfq-Ru-pRV">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sqe-Wh-qJo">
+                            <rect key="frame" x="15" y="10" width="290" height="48"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16"/>
+                            <state key="normal">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4MK-gN-Y9m">
+                            <rect key="frame" x="140" y="14" width="40" height="40"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="G6W-xr-e6j"/>
+                                <constraint firstAttribute="height" constant="40" id="O4y-2H-HQ1"/>
+                            </constraints>
+                            <state key="normal" image="add"/>
+                            <connections>
+                                <action selector="btnAddItem:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="dRe-mW-HBp"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="4MK-gN-Y9m" firstAttribute="centerY" secondItem="vfq-Ru-pRV" secondAttribute="centerY" id="5Lj-pA-g5F"/>
+                        <constraint firstItem="sqe-Wh-qJo" firstAttribute="leading" secondItem="vfq-Ru-pRV" secondAttribute="leading" constant="15" id="Ezv-v7-SOF"/>
+                        <constraint firstItem="sqe-Wh-qJo" firstAttribute="top" secondItem="vfq-Ru-pRV" secondAttribute="top" constant="10" id="JQ3-b4-zLg"/>
+                        <constraint firstAttribute="bottom" secondItem="sqe-Wh-qJo" secondAttribute="bottom" constant="10" id="KWn-aq-dyu"/>
+                        <constraint firstItem="4MK-gN-Y9m" firstAttribute="centerX" secondItem="vfq-Ru-pRV" secondAttribute="centerX" id="ibw-kw-se4"/>
+                        <constraint firstAttribute="trailing" secondItem="sqe-Wh-qJo" secondAttribute="trailing" constant="15" id="zJS-36-G0U"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="vfq-Ru-pRV" secondAttribute="bottom" id="DYa-tX-FQk"/>
+                <constraint firstItem="vfq-Ru-pRV" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="EHb-Td-BDC"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="vfq-Ru-pRV" secondAttribute="trailing" id="ITX-eV-eQl"/>
+                <constraint firstItem="vfq-Ru-pRV" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="pBO-1M-MMN"/>
+            </constraints>
+            <connections>
+                <outlet property="btnViewMore" destination="sqe-Wh-qJo" id="tKi-Mr-m40"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="106.47321428571428"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="add" width="32" height="32"/>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

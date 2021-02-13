@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+        <array key="montserrat_regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="UserInfoCell" rowHeight="280" id="KGk-i7-Jjw" customClass="UserInfoCell" customModule="Health_Coach" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="280"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="280"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="koP-0a-js0" customClass="CardView" customModule="Health_Coach" customModuleProvider="target">
+                        <rect key="frame" x="15" y="10" width="290" height="260"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Other Information " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TPL-g3-b8I">
+                                <rect key="frame" x="68.5" y="7" width="153" height="20"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="16"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLR-55-wCt">
+                                <rect key="frame" x="8" y="42" width="60" height="17.5"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Female" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1CC-1G-QXd">
+                                <rect key="frame" x="231" y="43" width="49" height="16"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="13"/>
+                                <color key="textColor" red="0.039215686270000001" green="0.76078431369999999" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TR2-eM-3gS">
+                                <rect key="frame" x="8" y="68.5" width="272" height="1"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="GGn-Iy-jUp"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sample" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aBi-CR-eml">
+                                <rect key="frame" x="230" y="82.5" width="50" height="16"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="13"/>
+                                <color key="textColor" red="0.039215686270000001" green="0.76078431369999999" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speciality" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S4V-54-pXT">
+                                <rect key="frame" x="8" y="81.5" width="67.5" height="17.5"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FWr-Ex-66n">
+                                <rect key="frame" x="8" y="108" width="272" height="1"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="p7n-Xl-nAc"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gardening" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NBC-qJ-eCy">
+                                <rect key="frame" x="215" y="125.5" width="65" height="15"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="12"/>
+                                <color key="textColor" red="0.039215686270000001" green="0.76078431369999999" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hobby" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3qr-6S-TYo">
+                                <rect key="frame" x="8" y="124" width="47" height="17.5"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S7K-h8-9I0">
+                                <rect key="frame" x="8" y="149" width="272" height="1"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Vqb-bK-lMt"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pn5-Ic-WH8">
+                                <rect key="frame" x="8" y="158" width="70.5" height="17.5"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0pL-p7-3sq">
+                                <rect key="frame" x="8" y="179.5" width="272" height="73.5"/>
+                                <string key="text">The major indexs on wall street fell another 2 percent on monday, making it very possible that the market will end this  month as the worst December for stocks since 1931. The market has been struglling  for most of the month over concerns about a slowing global economy , an escalating</string>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="10"/>
+                                <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0pL-p7-3sq" firstAttribute="trailing" secondItem="S7K-h8-9I0" secondAttribute="trailing" id="1MK-Ue-NVr"/>
+                            <constraint firstItem="0pL-p7-3sq" firstAttribute="leading" secondItem="S7K-h8-9I0" secondAttribute="leading" id="3CA-tL-dh5"/>
+                            <constraint firstItem="TPL-g3-b8I" firstAttribute="centerX" secondItem="koP-0a-js0" secondAttribute="centerX" id="4iV-5i-9KY"/>
+                            <constraint firstItem="hLR-55-wCt" firstAttribute="top" secondItem="TPL-g3-b8I" secondAttribute="bottom" constant="15" id="Ame-wL-p2b"/>
+                            <constraint firstItem="TR2-eM-3gS" firstAttribute="leading" secondItem="hLR-55-wCt" secondAttribute="leading" id="Bat-iv-9KR"/>
+                            <constraint firstItem="FWr-Ex-66n" firstAttribute="top" secondItem="S4V-54-pXT" secondAttribute="bottom" constant="9" id="D0F-hh-fba"/>
+                            <constraint firstItem="aBi-CR-eml" firstAttribute="trailing" secondItem="1CC-1G-QXd" secondAttribute="trailing" id="JVq-yw-Q19"/>
+                            <constraint firstItem="hLR-55-wCt" firstAttribute="leading" secondItem="koP-0a-js0" secondAttribute="leading" constant="8" id="QqM-fg-TFZ"/>
+                            <constraint firstItem="0pL-p7-3sq" firstAttribute="top" secondItem="Pn5-Ic-WH8" secondAttribute="bottom" constant="4" id="R1c-uI-YYJ"/>
+                            <constraint firstItem="3qr-6S-TYo" firstAttribute="top" secondItem="FWr-Ex-66n" secondAttribute="bottom" constant="15" id="ROg-7T-e5d"/>
+                            <constraint firstItem="Pn5-Ic-WH8" firstAttribute="top" secondItem="S7K-h8-9I0" secondAttribute="bottom" constant="8" id="SXW-3Q-ftf"/>
+                            <constraint firstItem="aBi-CR-eml" firstAttribute="centerY" secondItem="S4V-54-pXT" secondAttribute="centerY" id="TF8-Fc-GcE"/>
+                            <constraint firstItem="NBC-qJ-eCy" firstAttribute="trailing" secondItem="aBi-CR-eml" secondAttribute="trailing" id="USv-4r-egl"/>
+                            <constraint firstItem="S4V-54-pXT" firstAttribute="leading" secondItem="hLR-55-wCt" secondAttribute="leading" id="Ust-T7-5Z5"/>
+                            <constraint firstItem="S7K-h8-9I0" firstAttribute="leading" secondItem="3qr-6S-TYo" secondAttribute="leading" id="VkU-l1-S1H"/>
+                            <constraint firstItem="S7K-h8-9I0" firstAttribute="trailing" secondItem="NBC-qJ-eCy" secondAttribute="trailing" id="WWP-ou-v9P"/>
+                            <constraint firstItem="TPL-g3-b8I" firstAttribute="top" secondItem="koP-0a-js0" secondAttribute="top" constant="7" id="X6N-0e-51S"/>
+                            <constraint firstItem="TR2-eM-3gS" firstAttribute="trailing" secondItem="1CC-1G-QXd" secondAttribute="trailing" id="bc0-lp-wSx"/>
+                            <constraint firstItem="S4V-54-pXT" firstAttribute="top" secondItem="TR2-eM-3gS" secondAttribute="bottom" constant="12" id="dbg-it-t4Q"/>
+                            <constraint firstItem="FWr-Ex-66n" firstAttribute="leading" secondItem="S4V-54-pXT" secondAttribute="leading" id="fKj-jm-DNZ"/>
+                            <constraint firstAttribute="trailing" secondItem="1CC-1G-QXd" secondAttribute="trailing" constant="10" id="fdS-lG-hg5"/>
+                            <constraint firstItem="TR2-eM-3gS" firstAttribute="top" secondItem="hLR-55-wCt" secondAttribute="bottom" constant="9" id="hUj-5V-wE3"/>
+                            <constraint firstItem="0pL-p7-3sq" firstAttribute="leading" secondItem="Pn5-Ic-WH8" secondAttribute="leading" id="kvC-ar-OIN"/>
+                            <constraint firstItem="3qr-6S-TYo" firstAttribute="leading" secondItem="FWr-Ex-66n" secondAttribute="leading" id="oLp-Es-MOY"/>
+                            <constraint firstItem="FWr-Ex-66n" firstAttribute="trailing" secondItem="aBi-CR-eml" secondAttribute="trailing" id="tAs-Kt-NKU"/>
+                            <constraint firstItem="1CC-1G-QXd" firstAttribute="centerY" secondItem="hLR-55-wCt" secondAttribute="centerY" id="teU-5z-61a"/>
+                            <constraint firstItem="S7K-h8-9I0" firstAttribute="top" secondItem="NBC-qJ-eCy" secondAttribute="bottom" constant="8.5" id="vxM-Yu-MYn"/>
+                            <constraint firstItem="NBC-qJ-eCy" firstAttribute="centerY" secondItem="3qr-6S-TYo" secondAttribute="centerY" id="zLl-DD-uIf"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="koP-0a-js0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="R2D-VD-XbT"/>
+                    <constraint firstAttribute="trailing" secondItem="koP-0a-js0" secondAttribute="trailing" constant="15" id="T3T-W0-icK"/>
+                    <constraint firstItem="koP-0a-js0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="TtV-9Q-dnM"/>
+                    <constraint firstAttribute="bottom" secondItem="koP-0a-js0" secondAttribute="bottom" constant="10" id="gqu-sm-f96"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblAge" destination="aBi-CR-eml" id="eiD-dV-oIr"/>
+                <outlet property="lblGender" destination="1CC-1G-QXd" id="tuO-ya-hDH"/>
+                <outlet property="lblHobby" destination="NBC-qJ-eCy" id="0gp-fN-CyC"/>
+                <outlet property="txtOfAbout" destination="0pL-p7-3sq" id="Jpd-Jw-NHl"/>
+            </connections>
+            <point key="canvasLocation" x="134.78260869565219" y="77.678571428571431"/>
+        </tableViewCell>
+    </objects>
+</document>

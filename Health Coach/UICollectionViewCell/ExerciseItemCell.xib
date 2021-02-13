@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="montserrat_regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ExerciseItemCell" id="gTV-IL-0wX" customClass="ExerciseItemCell" customModule="Health_Coach" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NfG-38-iZ1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3/20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CH3-3S-YDs">
+                                <rect key="frame" x="16" y="16" width="32" height="18.5"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Running" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UTf-uL-oR4">
+                                <rect key="frame" x="63" y="16" width="66" height="18.5"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Running" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BD2-8b-t7W">
+                                <rect key="frame" x="246" y="16" width="66" height="18.5"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BXq-Eh-VbO">
+                                <rect key="frame" x="16" y="49" width="296" height="1"/>
+                                <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="ND4-j7-V32"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="BXq-Eh-VbO" secondAttribute="bottom" id="0KB-y5-xKu"/>
+                            <constraint firstItem="CH3-3S-YDs" firstAttribute="centerY" secondItem="NfG-38-iZ1" secondAttribute="centerY" id="0zC-Rd-HgN"/>
+                            <constraint firstAttribute="trailing" secondItem="BD2-8b-t7W" secondAttribute="trailing" constant="8" id="Nbj-LW-GmI"/>
+                            <constraint firstItem="BXq-Eh-VbO" firstAttribute="leading" secondItem="CH3-3S-YDs" secondAttribute="leading" id="QMb-xh-jlp"/>
+                            <constraint firstItem="BD2-8b-t7W" firstAttribute="centerY" secondItem="UTf-uL-oR4" secondAttribute="centerY" id="UKM-7p-Khd"/>
+                            <constraint firstItem="UTf-uL-oR4" firstAttribute="leading" secondItem="CH3-3S-YDs" secondAttribute="trailing" constant="15" id="Xnl-uP-Zb1"/>
+                            <constraint firstItem="CH3-3S-YDs" firstAttribute="leading" secondItem="NfG-38-iZ1" secondAttribute="leading" constant="16" id="gaH-Py-asO"/>
+                            <constraint firstItem="BXq-Eh-VbO" firstAttribute="trailing" secondItem="BD2-8b-t7W" secondAttribute="trailing" id="lUz-ps-gcM"/>
+                            <constraint firstItem="UTf-uL-oR4" firstAttribute="centerY" secondItem="CH3-3S-YDs" secondAttribute="centerY" id="qtT-JW-PkU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="NfG-38-iZ1" secondAttribute="bottom" id="JrZ-Nc-kcy"/>
+                <constraint firstItem="NfG-38-iZ1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="WAx-fx-0MN"/>
+                <constraint firstItem="NfG-38-iZ1" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="beq-x6-KkT"/>
+                <constraint firstAttribute="trailing" secondItem="NfG-38-iZ1" secondAttribute="trailing" id="v4C-dS-ORM"/>
+            </constraints>
+            <size key="customSize" width="304" height="50"/>
+            <connections>
+                <outlet property="lblRunning" destination="UTf-uL-oR4" id="Noe-yb-orY"/>
+                <outlet property="lblRunningTime" destination="CH3-3S-YDs" id="5CM-rm-PZd"/>
+                <outlet property="lblTime" destination="BD2-8b-t7W" id="In4-sE-NFa"/>
+            </connections>
+            <point key="canvasLocation" x="89.855072463768124" y="79.6875"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

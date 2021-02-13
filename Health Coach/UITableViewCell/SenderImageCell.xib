@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SenderImageCell" rowHeight="196" id="KGk-i7-Jjw" customClass="SenderImageCell" customModule="Health_Coach" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="196"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="196"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ACM-ue-bYt" customClass="CardView" customModule="Health_Coach" customModuleProvider="target">
+                        <rect key="frame" x="104" y="10" width="200" height="176"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6:30 pm" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="byk-Kj-g95">
+                                <rect key="frame" x="3" y="161" width="192" height="12"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                                <color key="textColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AHl-Ur-Lib">
+                                <rect key="frame" x="5" y="10" width="190" height="146"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="190" id="1na-GE-FkO"/>
+                                    <constraint firstAttribute="height" constant="146" id="gCk-JF-iOy"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="200" id="1wM-xq-Fju"/>
+                            <constraint firstAttribute="trailing" secondItem="byk-Kj-g95" secondAttribute="trailing" constant="5" id="Ch3-7p-iZY"/>
+                            <constraint firstItem="byk-Kj-g95" firstAttribute="leading" secondItem="ACM-ue-bYt" secondAttribute="leading" constant="3" id="DyV-hM-s3I"/>
+                            <constraint firstAttribute="bottom" secondItem="byk-Kj-g95" secondAttribute="bottom" constant="3" id="Hkn-EW-zoj"/>
+                            <constraint firstItem="AHl-Ur-Lib" firstAttribute="top" secondItem="ACM-ue-bYt" secondAttribute="top" constant="10" id="N8b-bF-97l"/>
+                            <constraint firstItem="byk-Kj-g95" firstAttribute="top" secondItem="AHl-Ur-Lib" secondAttribute="bottom" constant="5" id="fLt-cx-END"/>
+                            <constraint firstAttribute="trailing" secondItem="AHl-Ur-Lib" secondAttribute="trailing" constant="5" id="nzR-Sl-hgZ"/>
+                            <constraint firstItem="AHl-Ur-Lib" firstAttribute="leading" secondItem="ACM-ue-bYt" secondAttribute="leading" constant="5" id="yCM-wb-0AM"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="ACM-ue-bYt" secondAttribute="bottom" constant="10" id="0NF-sS-bl7"/>
+                    <constraint firstAttribute="trailing" secondItem="ACM-ue-bYt" secondAttribute="trailing" constant="16" id="dvY-YD-Aaa"/>
+                    <constraint firstItem="ACM-ue-bYt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="gNE-M4-wUW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgOfSender" destination="AHl-Ur-Lib" id="wF8-3G-aZ8"/>
+                <outlet property="lblTime" destination="byk-Kj-g95" id="tMl-zn-lF0"/>
+            </connections>
+            <point key="canvasLocation" x="-17.39130434782609" y="85.714285714285708"/>
+        </tableViewCell>
+    </objects>
+</document>
